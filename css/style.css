@@ -7,12 +7,7 @@ html {
     background-color: whitesmoke;
     
 }
-#weatherwidget {
-    position: absolute;
-    z-index: 1150;
-    background-color: red;
-    top: 50px;
-  }
+
 body {
     display: grid;
     grid-template-columns: 1fr;
