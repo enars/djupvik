@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="sv">
 
 <head>
-	<title>Djupvik - Gästplats</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="" />
-	<script type="module" src=""></script>
+	<title>Välkommen hem - Djupvik</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
+	<script type="module" src="./../js/smhi-widget.js"></script>
 </head>
 
 <body>
-
+    
 	<header>
-		<h1>Djupvik</h1>
-		<p class="smallLogo">FÖR DIG SOM SPARKAR BOLL</p>
+		<h1><a href="./../index.html">Djupvik</a></h1>
 		<nav>
             <ul>
-                <li><a href="#">Djupvik</a></li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Gästplats</a></li>
-                <li><a href="#">Turistmål</a></li>
-                <li id="active"><a href="#">Medlem</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="/pages/historia.html">Historia</a></li>
+                <li><a href="/pages/gastplats.html">Gästplats</a></li>
+                <li><a href="/pages/turistmal.html">Turistmål</a></li>
+                <li><a href="/pages/medlem.html">Medlem</a></li>
+                <li><a href="/pages/kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
+    <div id="hero">
+        <div id="weatherWidget"></div>
+        <h2>Medlem</h2>
+    </div>
 	<main>
-        Kommentar till dig som utvecklar sajten:
-Tanken med en medlemssidan är att ni visar oss hur den delen skulle kunna se ut. Vi har information om aktuella händelser, vad som är på gång, kontaktuppgifter till styrelsen och protokollen från deras möten. 
-
-Så denna sida vill vi se hur ni löser det med medlemslistan, dessa namn är då inte riktiga personer. Vi vill ha det hela i en tabell. 
-
-<article>
-Info:
-Det som skall visas i tabellen är Förnamn, Efternamn, Mail och Telefonnummer.
-
-De ”personer” vars uppgifter ska läggas in är:
-
-Erik Ekholm, erik@djupvik.se, 070-123 45 67
-
-Bo Lautin, bo@djupvil.se, 071-234 56 78
-
-Fredrik Bottarve, fredrik@djupvik.se, 072-345 67 89
-
-Christina Persson, christina@djupvik.se, 073-456 78 90
-
-Per-Erik Larsson, pere@djupvik.se, 074-567 89 01
-
-Maria Fagerström, maria@djupvik.se, 075-678 90 12
-
-Lars Bengtsson, lars@djupvik.se, 076-789 01 23
-</article>
-
+        <div class="container">
+            <article class="intro">
+                <h2>Medlemssidan</h2>
+                <section>
+                    <h3>Aktuella händelser</h3>
+                </section>
+                <section>
+                    <h3>Mötesprotokoll</h3>
+                </section>
+                <section>
+                    <h3>Kontaktuppgifter</h3>
+                    <table>
+                        <tr>
+                            <th>Namn</th>
+                            <th>E-mailadress</th>
+                            <th>Telefon</th>
+                        </tr>
+                        <tr>
+                            <td>Erik Ekholm</td>
+                            <td>erik@djupvik.se</td>
+                            <td>070-123 45 67</td>
+                        </tr>
+                        <tr>
+                            <td>Bo Lautin</td>
+                            <td>bo@djupvil.se</td>
+                            <td>071-234 56 78</td>
+                        </tr>
+                        <tr>
+                            <td>Fredrik Bottarve</td>
+                            <td>fredrik@djupvik.se</td>
+                            <td>072-345 67 89</td>
+                        </tr>
+                        <tr>
+                            <td>Christina Persson</td>
+                            <td>christina@djupvik.se</td>
+                            <td>073-456 78 90</td>
+                        </tr>
+                        <tr>
+                            <td>Per-Erik Larsson</td>
+                            <td>pere@djupvik.se</td>
+                            <td>074-567 89 01</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Fagerström</td>
+                            <td>maria@djupvik.se</td>
+                            <td>075-678 90 12</td>
+                        </tr>
+                        <tr>
+                            <td>Lars Bengtsson</td>
+                            <td>lars@djupvik.se</td>
+                            <td>076-789 01 23</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </div>
 	</main>
 
 	<footer>

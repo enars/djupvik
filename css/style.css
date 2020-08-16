@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "weatherWidget.css";
+@import "table.css";
 
 html {
     background-color: whitesmoke;
