@@ -35,51 +35,58 @@
         <div class="container">
             <article class="intro">
 
-        <h2>Kontaktuppgifter</h2>
-        <p>Hamnfogde Bo Lautin, mobil 0707-920310</p>
+                <h2>Kontaktuppgifter</h2>
+                <p>Hamnfogde Bo Lautin, mobil 0707-920310</p>
 
-        <p>Djupviks hamnförening</p>
-        <p>c/o Ekholm</p>
-        <p>Eksta Hägur 170</p>
-        <p>623 54 Klintehamn</p>
+                <p>Djupviks hamnförening</p>
+                <p>c/o Ekholm</p>
+                <p>Eksta Hägur 170</p>
+                <p>623 54 Klintehamn</p>
+            </article>
+            <article class="form">
+                <h2>Kontaktformulär</h2>
+                <form id="contact-form">
+                    <label for="title">Ärende</label>
+                    <input type="text" id="title" name="title" placeholder="Rubriken på ditt ärende">
 
-        Kontaktformulär
+                    <label for="description">Beskrivning</label>
+                    <textarea rows="4" id="description" name="description" placeholder="Beskriv ditt ärende här"></textarea>
+                
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name">
+                
+                    <label for="type-question">Frågan gäller:</label>
+                    <select id="type-question" name="type-question">
+                        <option value="båtplats">Båtplats</option>
+                        <option value="medlem">Medlemskap</option>
+                        <option value="övrigt">Övrigt</option>
+                    </select>
 
-        Sånt vi vill få in svar på är:
-        <form id="contact-form">
-            <label for="title">First Name</label>
-            <input type="text" id="title" name="ärende" placeholder="Your name..">
+                    <label for="title">Email</label>
+                    <input type="email" id="email" name="email">
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        </form>
-        - Rubrik för ärendet.
-        - Beskrivning utav ärendet.
-        - Val om vad det gäller (Båtplats, Medlem eller Övrigt).
-        - Hur man vill bli kontaktad (mail, telefon eller inte alls)
-        - Telefon
-        - Mail
-        </article>
-        Kanske att du kommer på något mer som är relevant? 
+                    <label for="phone">Telefon</label>
+                    <input id="phone" type="text" name="phone">
 
+                    <label for="contact-question">Hur vill du bli kontaktad?</label>
+                    <select id="contact-question" name="contact-question">
+                        <option value="email">Email</option>
+                        <option value="telefon">Telefon</option>
+                        <option value="inte-alls">Inte alls</option>
+                    </select>
+
+                    <input type="submit" value="Skicka">
+                </form>
+            </article>
+        </div>
 	</main>
 
 	<footer>
+        <div class="footer">
+            <p>Kontakt: info@djupvikshamn.se</p>
+
+            <p>Copyrighten till sajten tillhör ©Djupvikshamn.se</p>
+        </div>
     </footer>
 </body>
 </html>

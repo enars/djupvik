@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "weatherWidget.css";
 @import "table.css";
+@import "form.css";
 
 html {
     background-color: whitesmoke;
@@ -31,9 +32,6 @@ aside {
 }
 #hero {
     grid-area: hero;
-}
-#container {
-    grid-area: cont;
 }
 main {
     grid-area: main;
@@ -107,6 +105,10 @@ nav {
     position: relative;
     top: -10vh;
 }
+.form {
+    position:relative;
+    top: -5vh;
+}
 article {
     box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
     margin: 0 5px;
@@ -146,9 +148,41 @@ aside section .date{
     padding-bottom: 0.6em;
 }
 footer {
-    height: 75px;
     background-color:black;
+    color: white;
+    padding: 10px 0;
 }
+.important {
+    background-color: rgba(240, 128, 128, 0.466);
+    padding: 5px;
+}
+footer p {
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#english {
+    display: flex;
+    position: absolute;
+    width:100%;
+    z-index: 1150;
+    top: 175px;
+    justify-content: flex-end;
+  }
+#english-btn {
+    margin-right: 25px;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    border: 2px solid rgb(192, 192, 192);;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./../assets/Djupvik-bilder/medium/english.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
 @media only screen and (min-width: 420px) {
     header {
         position: fixed;
@@ -195,17 +229,18 @@ footer {
         display: grid;
         grid-template-columns: minmax(0,0.1fr) minmax(0,1fr) minmax(0,0.1fr);
         grid-template-areas:
-          ". header ."
+          "header header header"
           "hero hero hero"
           ". main ."
           ". aside ." 
-          ". footer .";
+          "footer footer footer";
     }
 }
 @media only screen and (min-width: 1024px) {
     h1 {
         text-align: center;
     }
+    
     nav ul {
         justify-content: center;
     }
@@ -213,12 +248,24 @@ footer {
         padding-left: 1em;
         padding-right: 1em;
     }
+    #english {
+        justify-content: center;
+    }
+    #english-btn {
+        margin-right: 0px;
+        margin-left: 765px;
+    }
     figure {
         width:100%;
         text-align: center;
     }
     .intro {
+        padding: 25px 0;
         top: -3vh;
+    }
+    .form {
+        padding: 25px 0;
+        top: -1vh;
     }
     aside {
         top: 0vh;
@@ -235,9 +282,9 @@ footer {
         display: grid;
         grid-template-columns: minmax(0,0.5fr) minmax(0,1fr) minmax(0,0.5fr);
         grid-template-areas:
-          ". header header header ."
-          "hero hero hero hero hero"
-          ". main main main ." 
-          ". footer . . . . .";
+          "header header header"
+          "hero hero hero"
+          ". main ." 
+          "footer footer footer";
     }
 }
