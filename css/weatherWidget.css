@@ -1,0 +1,33 @@
+#weatherWidget {
+  display: flex;
+  position: absolute;
+  width:100%;
+  z-index: 1150;
+  top: 100px;
+  justify-content: flex-end;
+  font-family: 'Merriweather', serif;
+}
+#weatherWidget .frame {
+  margin-right: 25px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgb(206, 206, 206);
+  border-radius: 5px;
+  border: 2px solid rgb(192, 192, 192);
+  background-color: rgb(241, 241, 241);
+}
+#today {
+  width: 100%;
+  text-align: center;
+  padding-top: 0.4em;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  #weatherWidget {
+    justify-content: center;
+  }
+  #weatherWidget .frame {
+    margin-right: 0px;
+    margin-left: 700px;
+  }
+}

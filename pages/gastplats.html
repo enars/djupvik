@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="sv">
 
 <head>
-	<title>Djupvik - Gästplats</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="" />
+	<title>Välkommen hem - Djupvik</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
 	<script type="module" src=""></script>
 </head>
 
 <body>
-
+    
 	<header>
-		<h1>Djupvik</h1>
-		<p class="smallLogo">FÖR DIG SOM SPARKAR BOLL</p>
+		<h1><a href="./../index.html">Djupvik</a></h1>
 		<nav>
             <ul>
-                <li><a href="#">Djupvik</a></li>
-                <li><a href="#">Historia</a></li>
-                <li id="active"><a href="#">Gästplats</a></li>
-                <li><a href="#">Turistmål</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="/pages/historia.html">Historia</a></li>
+                <li><a href="/pages/gastplats.html">Gästplats</a></li>
+                <li><a href="/pages/turistmal.html">Turistmål</a></li>
+                <li><a href="/pages/medlem.html">Medlem</a></li>
+                <li><a href="/pages/kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
+    <div id="hero">
+        <h2>Gästplats</h2>
+    </div>
 	<main>
-        <article>
+        <div class="container">
+            <article class="intro">
             <h2>Gästhamnen</h2>
             <p>Gästbåtar är hjärtligt välkomna!</p>
 
@@ -41,6 +47,7 @@
 
             Hamnfogde Bo Lautin Mobil 0707 - 92 03 10</p>
         </article>
+        </div>
 	</main>
 
 	<footer>
