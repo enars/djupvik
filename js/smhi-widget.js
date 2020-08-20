@@ -7,8 +7,10 @@ import {fetchData} from "./service.js"
 }())
 
 function getRelevantData(data) {
-  const celsius = data.timeSeries[1].parameters[1].values[0]
+  const tempParameter = data.timeSeries[0].parameters.filter( obj => obj.name == "t" )
+  const celsius = tempParameter[0].values[0]
   return celsius
+  
 }
 
 function createHtml(data) {
